@@ -1,1 +1,11 @@
 /*Only use this file if you want to override bootstrap or create your own style*/
+
+body{
+    margin: 0;
+    height: 100vh;
+    padding: 0;
+    background-image: url(https://vignette.wikia.nocookie.net/marvelcrossroads/images/6/6a/Captain_Marvel_%28Earth-9%29.jpg/revision/latest?cb=20140715233838);
+    
+    background-repeat: no-repeat;
+    background-position: center center;
+}

@@ -75,11 +75,12 @@ function energyBlast(){
     update(thanos.health)
 }
 
-//function death(){
-//    if (health = 0){
-//
-//    }
-//}
+function death(){
+    if (thanos.health <= 0){
+        document.getElementById('game-over').innerText = 'Game Over'
+      
+    }
+}
 
 function update() {
     document.getElementById('thanos-health').innerText = thanos.health
