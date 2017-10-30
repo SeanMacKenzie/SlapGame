@@ -1,9 +1,27 @@
 /*Only use this file if you want to override bootstrap or create your own style*/
 
 body{
-    
+    background-color: white;
     
     
     
    
+}
+
+.alpha{
+    padding: 3%;
+    background-color: #dd441f;  
+}
+
+.delta{
+    padding: 3%;
+    background-color: #1463ae;
+}
+
+.gamma{
+    background-color: #3b4b81;
+}
+
+.beta{
+    background-color: #f1c047;
 }

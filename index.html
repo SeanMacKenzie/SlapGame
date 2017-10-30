@@ -7,9 +7,9 @@
 	
 </head>
 <body>
-	<div class="container">
+	<div class="container-fluid">
 		<div class="row alpha text-center">
-			<h1>SLAP GAME</h1>
+			<h1>Captain Marvel Slap Game</h1>
 		</div>
 		<div class="row beta text-center">
 			<div class="col-md-6 image">
@@ -17,20 +17,30 @@
 					<img src="https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/b/b1/Thanos_featured.png/revision/latest?cb=20160901205044" id="baddie" alt="">
 			</div>
 			<div class="col-md-6 buttons">
+				<h3>Captain Marvel <span>Health: <span id="marvel-health">--</span></h3><img src="https://vignette.wikia.nocookie.net/marvelcrossroads/images/6/6a/Captain_Marvel_%28Earth-9%29.jpg/revision/latest?cb=20140715233838" id="hero" alt"">
+				
+			</div>
+		</div>
+		<div class="row gamma float-right">
+			<div class="col-md-6"></div>
+			<div class="col-md-6 abilities">
+
+				<h4>Abilities: </h4>
 				<button id="punch" onclick="punch()">Punch</button>
 				<button id="speedStrike" onclick="speedStrike()">Speed Strike</button>
 				<button id="energyBlast" onclick="energyBlast()">Energy Blast</button>
 			</div>
 		</div>
-		<div class="row gamma text-center">
+		<div class="row delta float-right">
 			<div class="col-md-6"></div>
-			<div class="col-md-6 items">
+			<div class="col-md-6 teams">
+				<h4>Teams: </h4>
 				<button id="alphaFlight" onclick="giveAlphaFlight()">Alpha Flight</button>
 				<button id="avengers" onclick="giveAvengers()">Avengers</button>
 				<button id="ultimates" onclick="giveUltimates()">Ultimates</button>
 			</div>
 		</div>
-		<row class="delta output-screen">
+		<row class="row epsilon output-screen">
 			<div class="col-md-12 output">
 				<h3><span id="game-over">--</span></h3>
 			</div>

@@ -84,6 +84,7 @@ function death(){
 
 function update() {
     document.getElementById('thanos-health').innerText = thanos.health
+    document.getElementById('marvel-health').innerText = captainMarvel.health
 }
 update()
 
