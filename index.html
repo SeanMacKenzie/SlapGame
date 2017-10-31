@@ -1,11 +1,14 @@
 <html>
+
 <head>
 	<title>Slap Object Game</title>
-	
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	 crossorigin="anonymous">
 	<link rel="stylesheet" href="game.css">
-	
+
 </head>
+
 <body>
 	<div class="container-fluid">
 		<div class="row alpha text-center">
@@ -13,12 +16,21 @@
 		</div>
 		<div class="row beta text-center">
 			<div class="col-md-6 image">
-				<h3>Thanos <span>Health:<span id="thanos-health">--</span></h3>
-					<img src="https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/b/b1/Thanos_featured.png/revision/latest?cb=20160901205044" id="baddie" alt="">
+				<h3>Thanos
+					<span>Health:
+						<span id="thanos-health">--</span>
+				</h3>
+				<img src="https://vignette.wikia.nocookie.net/marvel-contestofchampions/images/b/b1/Thanos_featured.png/revision/latest?cb=20160901205044"
+				 id="baddie" alt="">
 			</div>
 			<div class="col-md-6 buttons">
-				<h3>Captain Marvel <span>Health: <span id="marvel-health">--</span></h3><img src="https://vignette.wikia.nocookie.net/marvelcrossroads/images/6/6a/Captain_Marvel_%28Earth-9%29.jpg/revision/latest?cb=20140715233838" id="hero" alt"">
-				
+				<h3>Captain Marvel
+					<span>Health:
+						<span id="marvel-health">--</span>
+				</h3>
+				<img src="https://vignette.wikia.nocookie.net/marvelcrossroads/images/6/6a/Captain_Marvel_%28Earth-9%29.jpg/revision/latest?cb=20140715233838"
+				 id="hero" alt "">
+
 			</div>
 		</div>
 		<div class="row gamma float-right">
@@ -32,7 +44,11 @@
 			</div>
 		</div>
 		<div class="row delta float-right">
-			<div class="col-md-6"></div>
+			<div class="col-md-6">
+				<h3>
+					<span id="game-over">--</span>
+				</h3>
+			</div>
 			<div class="col-md-6 teams">
 				<h4>Teams: </h4>
 				<button id="alphaFlight" onclick="app.controllers.slapController.giveTeam('alphaFlight')">Alpha Flight</button>
@@ -40,17 +56,12 @@
 				<button id="ultimates" onclick="app.controllers.slapController.giveTeam('ultimates')">Ultimates</button>
 			</div>
 		</div>
-		<row class="row epsilon output-screen">
-			<div class="col-md-12 output">
-				<h3><span id="game-over">--</span></h3>
-			</div>
-		</row>
+
 	</div>
-	
+
 	<script src="app/slap/slap-service.js"></script>
 	<script src="app/slap/slap-controller.js"></script>
 	<script src="app/init.js"></script>
 </body>
+
 </html>
-
-
