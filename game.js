@@ -21,6 +21,22 @@ var thanos = {
     }
 }
 
+// function Target(name,health,punch,speedStike,energyBlast){
+//     this.name = name;
+//     this.health = health;
+//     this.attacks = {
+//         punch: punch,
+//         speedStike: speedStrike,
+//         energyBlast: energyBlast
+//     }
+//     this.team = []
+//     this.hits = 0
+// }
+
+// var thanos = new Target('Thanos', 2000, 5, 10, 20)
+
+// var captainMarvel = new Target('Captain Marvel', 100)
+
 var team = function(name, modifier, description){
     this.name = name,
     this.modifier = modifier,
@@ -35,7 +51,7 @@ var teams = {
 
 function giveAlphaFlight(){
     captainMarvel.teams.push(teams.alphaFlight)
-    console.log(captainMarvel)
+    
 }
 
 function giveAvengers(){
@@ -57,30 +73,42 @@ function addMods(){
     return power
 }
 
-function punch(){
-    addMods()
-    thanos.health -= 5 * addMods();
-    update(thanos.health)
-}
+// function punch(){
+//     addMods()
+//     thanos.health -= 5 * addMods();
+//     update(thanos.health)
+// }
    
-function speedStrike(){
-    addMods()
-    thanos.health -= 10 * addMods();
-    update(thanos.health)
-}
+// function speedStrike(){
+//     addMods()
+//     thanos.health -= 10 * addMods();
+//     update(thanos.health)
+// }
 
-function energyBlast(){
-    addMods()
-    thanos.health -= 20 * addMods();
-    update(thanos.health)
-}
+// function energyBlast(){
+//     addMods()
+//     thanos.health -= 20 * addMods();
+//     update(thanos.health)
+// }
 
-function death(){
-    if (thanos.health <= 0){
-        document.getElementById('game-over').innerText = 'Game Over'
-      
+function attack(type){
+    thanos.health -= captainMarvel.attacks[type] * addMods()
+    if (thanos.health < 0) {
+        thanos.health = 0
     }
+    if (thanos.health > 2000){
+        thanos.health = 2000
+    }
+    
+    update()
 }
+
+//function death(){
+//    if (thanos.health <= 0){
+//        document.getElementById('game-over').innerText = 'Game Over'
+//      
+//    }
+//}
 
 function update() {
     document.getElementById('thanos-health').innerText = thanos.health
@@ -89,4 +117,4 @@ function update() {
 update()
 
 
-console.log(captainMarvel.teams)
+//console.log(captainMarvel.teams)

@@ -26,18 +26,18 @@
 			<div class="col-md-6 abilities">
 
 				<h4>Abilities: </h4>
-				<button id="punch" onclick="punch()">Punch</button>
-				<button id="speedStrike" onclick="speedStrike()">Speed Strike</button>
-				<button id="energyBlast" onclick="energyBlast()">Energy Blast</button>
+				<button id="punch" onclick="app.controllers.slapController.attack('punch')">Punch</button>
+				<button id="speedStrike" onclick="app.controllers.slapController.attack('speedStrike')">Speed Strike</button>
+				<button id="energyBlast" onclick="app.controllers.slapController.attack('energyBlast')">Energy Blast</button>
 			</div>
 		</div>
 		<div class="row delta float-right">
 			<div class="col-md-6"></div>
 			<div class="col-md-6 teams">
 				<h4>Teams: </h4>
-				<button id="alphaFlight" onclick="giveAlphaFlight()">Alpha Flight</button>
-				<button id="avengers" onclick="giveAvengers()">Avengers</button>
-				<button id="ultimates" onclick="giveUltimates()">Ultimates</button>
+				<button id="alphaFlight" onclick="app.controllers.slapController.giveTeam('alphaFlight')">Alpha Flight</button>
+				<button id="avengers" onclick="app.controllers.slapController.giveTeam('avengers')">Avengers</button>
+				<button id="ultimates" onclick="app.controllers.slapController.giveTeam('ultimates')">Ultimates</button>
 			</div>
 		</div>
 		<row class="row epsilon output-screen">
@@ -47,7 +47,9 @@
 		</row>
 	</div>
 	
-	<script src="game.js"></script>
+	<script src="app/slap/slap-service.js"></script>
+	<script src="app/slap/slap-controller.js"></script>
+	<script src="app/init.js"></script>
 </body>
 </html>
 
