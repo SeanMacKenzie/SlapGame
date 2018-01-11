@@ -11,19 +11,8 @@ function SlapService() {
         return power
     }
 
-    // function Target(name,health,punch,speedStike,energyBlast){
-    //     this.name = name;
-    //     this.health = health;
-    //     this.attacks = {
-    //         punch: punch,
-    //         speedStike: speedStrike,
-    //         energyBlast: energyBlast
-    //     }
-    //     this.team = []
-    //     this.hits = 0
-    // }
-
-    // var thanos = new Target('Thanos', 2000, 5, 10, 20)
+    var assistBalance = 0
+    
 
     var captainMarvel = {
         health: 100,
@@ -62,19 +51,6 @@ function SlapService() {
         captainMarvel.teams.push(teams[team])
     }
 
-    // this.giveAlphaFlight = function giveAlphaFlight(){
-    //     captainMarvel.teams.push(teams.alphaFlight)
-
-    // }
-
-    // this.giveAvengers = function giveAvengers(){
-    //     captainMarvel.teams.push(teams.avengers)
-    // }
-
-    // this.giveUltimates = function giveUltimates(){
-    //     captainMarvel.teams.push(teams.ultimates)
-    // }
-
     this.attack = function attack(type) {
         if (captainMarvel.attacks[type]) {
 
@@ -89,6 +65,8 @@ function SlapService() {
 
 
     }
+    
+
 
     this.getThanos = function getThanos() {
         return JSON.parse(JSON.stringify(thanos))
@@ -98,8 +76,6 @@ function SlapService() {
         return JSON.parse(JSON.stringify(captainMarvel))
     }
 
-    // this.getTeams = function getTeams() {
-    //     return JSON.parse(JSON.stringify(teams))
-    // }
+   
 
 }

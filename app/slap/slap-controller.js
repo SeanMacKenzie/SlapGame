@@ -22,17 +22,7 @@ function SlapController() {
         update()
     }
 
-    // this.giveAlphaFlight = function giveAlphaFlight(){
-    //     slapService.giveAlphaFlight()
-    // }
-
-    // this.giveAvengers = function giveAvengers(){
-    //     slapService.giveAvengers()
-    // }
-
-    // this.giveUltimates = function giveUltimates(){
-    //     slapService.giveUltimates()
-    // }
+   
 
 
     update()
